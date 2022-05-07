@@ -1,0 +1,300 @@
+:root{
+    --dim-white: #f5f5f5;
+    --dim-black: #222;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+section{
+    width: 1200px;
+    height: 700px;
+    background: var(--dim-white);
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: system-ui;
+    color: #555;
+    border-radius: 20px;
+
+}
+.side-bar{
+    width: 300px;
+    height:100%;
+
+}
+
+
+.side-bar ul,
+.side-bar form{
+    width: 90%;
+    height: 70px;
+    padding:  2px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.side-bar ul:first-child li{
+    background:transparent !important;
+}
+
+.side-bar ul:last-child{
+    background:white;
+    height: 70%;
+    border-radius:20px;
+    padding:10px;
+    overflow-y: auto;
+}
+.side-bar ul:last-child::-webkit-scrollbar,
+.body::-webkit-scrollbar{
+    width: 2px;
+}
+
+.side-bar ul:last-child::-webkit-scrollbar-thumb,
+.body::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent 6%, cyan 6%, blue 94%, transparent 6%);
+    border-radius: 6px;
+
+}
+
+.side-bar ul:last-child li{
+    margin:20px auto;
+}
+.side-bar ul li{
+    width:100%;
+    height:60px;
+    list-style: none;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.side-bar ul li.active{
+    width: 102%;
+    box-shadow: 0 0 10px 0 #0006;
+}
+
+.side-bar ul li img,
+header img,
+.friend img{
+    width:60px;
+    height:50px;
+    border-radius:30px;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+
+.side-bar ul li div{
+     width: 200px;
+
+}
+.side-bar ul li div p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.side-bar form input{
+    padding:15px;
+    border-radius: 25px;
+    width:100%;
+    background: white;
+    border: none;
+    outline:none;
+    margin: 10px auto;
+
+}
+
+.side-bar form .icon-search{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+main{
+    width:900px;
+    height:100%;
+    border-left: 5px solid;
+    border-image: linear-gradient(to bottom, #efefef, #f1f1f1) 1;
+}
+main header{
+    width:98%;
+    height:120px;
+    margin: 2px 1% 50px 1%;
+    border-radius: 20px;
+}
+.top img{
+    width: 50px;
+    height: 50px;
+}
+main header .top{
+    width:100%;
+    height: 60px;
+    padding:10px 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+main header .top h4{
+    width: 70%;
+    margin: 0 10px;
+}
+main header .top .icon{
+    width: 40px;
+    border: none;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 20px;
+    background: white;
+}
+header ul{
+    display:flex;
+    width:100%;
+    height: 60px;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 0 40px;
+    font-size: 13px;
+    padding: 0px 10px 6px 10px;
+}
+
+header ul li.active{
+    border-bottom:2px solid #e5e5e5;
+}
+header ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main .body{
+    width: 98%;
+    height: 65%;
+    padding: 20px;
+    margin: 5px auto;
+    overflow-y: auto;
+}
+
+.friend{
+    width: 100%;
+    display: flex;
+}
+
+.me{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.friend img{
+    width: 2rem;
+    height: 2rem;
+}
+.friend div{
+    margin: 0 20% 0 0;
+}
+.me div{
+    margin: 0 0 0 20%;
+}
+.friend div p{
+    background: white;
+    padding: 20px 37px 20px 18px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    
+}
+.me div p{
+    padding: 20px 40px 20px 5px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    text-align: right;
+}
+.friend div small{
+    float: left;
+    margin: 10px;
+    font-weight:bold;
+    font-size: 10px;
+}
+.me small{
+    float: right;
+    margin: 10px;
+    font-weight:bold;
+    font-size: 10px;
+}
+
+.me p{
+    background: #557fff;
+    color: white;
+}
+
+.sendbox{
+    width:96%;
+    height: 60px;
+    background: white;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sendbox label{
+    margin: 0 10px 0 30px;
+    font-size: 22px;
+    transform: rotate(90deg);
+}
+
+.sendbox .mic{
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.sendbox input{
+    border: none;
+    outline: none;
+    padding:10px;
+    width: 80%;
+    background: transparent;
+}
+.sendbox .attach_file{
+    padding: 10px;
+    margin: 0 0px 0px 11px;
+    width: 40px;
+    height: 45px;
+    transform: rotate(45deg);
+    border-radius: 20px;
+}
+.sendbox .send_paper{
+    padding: 10px;
+    margin: 0 0px 0px 11px;
+    width: 42px;
+    height: 42px;
+    border-radius: 20px;
+    background: #557fff;
+    border: none;
+
+}
+.send_paper:hover{
+   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.send_paper:active{
+    background-color: #eeeeee;     
+ }
+
+.send-message{
+    display: none;
+}
